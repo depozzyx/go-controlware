@@ -1,0 +1,40 @@
+> ### start, output cleared
+> ls -lah: итого 36K
+drwxrwxr-x  6 depozzyx depozzyx 4,0K июн  6 16:21 .
+drwxrwxr-x 58 depozzyx depozzyx 4,0K июн  6 14:53 ..
+drwxrwxr-x  2 depozzyx depozzyx 4,0K июн  6 15:02 client
+-rw-rw-r--  1 depozzyx depozzyx  125 июн  6 15:48 go.mod
+-rw-rw-r--  1 depozzyx depozzyx  370 июн  6 15:48 go.sum
+-rw-rw-r--  1 depozzyx depozzyx  464 июн  6 16:39 main.go
+drwxrwxr-x  2 depozzyx depozzyx 4,0K июн  6 16:39 outputs
+drwxrwxr-x  2 depozzyx depozzyx 4,0K июн  6 15:42 server
+drwxrwxr-x  2 depozzyx depozzyx 4,0K июн  6 15:42 shared
+ 
+> echo 'putin huilo': 'putin huilo'
+ 
+> sudo ls /: 0
+bin
+boot
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+ 
+> ### output
