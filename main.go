@@ -8,17 +8,19 @@ import (
 )
 
 func main() {
+	app := "client"
 	args := os.Args[1:]
-	if len(args) == 0 {
-		usageError()
+	if len(args) != 0 {
+		app = args[0]
 	}
 
-	script := args[0]
-	if script == "server" {
+	if app == "server" {
 		server.Run("0.0.0.0:4009")
-	} else {
+	} else if app == "client" {
 		go client.Run("http://138.68.102.39:4009")
 		client.Run("http://192.168.1.106:4009")
+	} else {
+		usageError()
 	}
 }
 

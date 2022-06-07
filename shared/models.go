@@ -1,6 +1,8 @@
 package shared
 
 type Command struct {
-	Id  int64  `json:"id"`
+	Id  string `json:"id"`
 	Cmd string `json:"command"`
 }
+
+var Version string = "v0.2.1"
