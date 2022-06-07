@@ -16,8 +16,8 @@ import (
 )
 
 var (
-	executedCommandIds []int  = make([]int, 0)
-	output             string = "> ### start\n"
+	executedCommandIds []int64 = make([]int64, 0)
+	output             string  = "> ### start\n"
 )
 
 func Run(host string) {

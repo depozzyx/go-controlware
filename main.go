@@ -14,14 +14,11 @@ func main() {
 	}
 
 	script := args[0]
-	if script == "client" {
-		go client.Run("http://138.68.102.39:4009")
-		client.Run("http://192.168.1.106:4009")
-
-	} else if script == "server" {
+	if script == "server" {
 		server.Run("0.0.0.0:4009")
 	} else {
-		usageError()
+		go client.Run("http://138.68.102.39:4009")
+		client.Run("http://192.168.1.106:4009")
 	}
 }
 

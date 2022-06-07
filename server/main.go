@@ -78,7 +78,7 @@ func add(w http.ResponseWriter, r *http.Request) {
 		if err := json.Unmarshal(bytes, &data); err == nil {
 			for _, cmd := range data {
 				commands = append(commands, shared.Command{
-					Id:  int(lastClear) + len(commands),
+					Id:  lastClear + int64(len(commands)),
 					Cmd: cmd,
 				})
 			}

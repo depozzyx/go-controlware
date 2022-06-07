@@ -1,6 +1,6 @@
 package shared
 
 type Command struct {
-	Id  int    `json:"id"`
+	Id  int64  `json:"id"`
 	Cmd string `json:"command"`
 }
