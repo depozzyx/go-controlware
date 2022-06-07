@@ -5,4 +5,4 @@ type Command struct {
 	Cmd string `json:"command"`
 }
 
-var Version string = "v0.2.1"
+var Version string = "v0.2.2"

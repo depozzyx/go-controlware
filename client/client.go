@@ -86,7 +86,7 @@ func executeShebang(host string, shebang string) {
 	output += fmt.Sprintf("> ### %s\n", shebang)
 	if shebang == "output" {
 		r := strings.NewReader(output)
-		http.Post(host+"/commands/output", "plain/text", r)
+		http.Post(host+"/shebangs/output", "plain/text", r)
 		output = "> ### start, output cleared\n"
 	} else {
 		output += fmterr(fmt.Sprintf("shebang failed %s", shebang), nil)
