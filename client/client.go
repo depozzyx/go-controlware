@@ -84,7 +84,7 @@ func executeCommand(host, command string) {
 
 func executeShebang(host string, shebang string) {
 	output += fmt.Sprintf("> ### %s\n", shebang)
-	if shebang == "output" {
+	if shebang == "output" || shebang == "penis" {
 		r := strings.NewReader(output)
 		http.Post(host+"/shebangs/output", "plain/text", r)
 		output = "> ### start, output cleared\n"
